@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     top: 0;
+    width: 100vw;
 }
 
 header {
@@ -513,6 +514,21 @@ hr {
     color: #fff;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-1,
+.btn-2 {
+    width: 50%;
+}
+
 .btn-dis {
     background: #ff6b00;
     color: #fff;
@@ -804,6 +820,12 @@ hr {
         to {
             margin-top: 0;
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-container hr {
+        display: none;
     }
 }
 
